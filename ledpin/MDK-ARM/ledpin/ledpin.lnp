@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+".\ledpin\startup_stm32f103xb.o"
+".\ledpin\i2c-lcd.o"
+".\ledpin\main.o"
+".\ledpin\stm32f1xx_it.o"
+".\ledpin\stm32f1xx_hal_msp.o"
+".\ledpin\stm32f1xx_hal_gpio_ex.o"
+".\ledpin\stm32f1xx_hal_i2c.o"
+".\ledpin\stm32f1xx_hal.o"
+".\ledpin\stm32f1xx_hal_rcc.o"
+".\ledpin\stm32f1xx_hal_rcc_ex.o"
+".\ledpin\stm32f1xx_hal_gpio.o"
+".\ledpin\stm32f1xx_hal_dma.o"
+".\ledpin\stm32f1xx_hal_cortex.o"
+".\ledpin\stm32f1xx_hal_pwr.o"
+".\ledpin\stm32f1xx_hal_flash.o"
+".\ledpin\stm32f1xx_hal_flash_ex.o"
+".\ledpin\stm32f1xx_hal_exti.o"
+".\ledpin\stm32f1xx_hal_tim.o"
+".\ledpin\stm32f1xx_hal_tim_ex.o"
+".\ledpin\stm32f1xx_hal_uart.o"
+".\ledpin\system_stm32f1xx.o"
+--strict --scatter ".\ledpin\ledpin.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ledpin.map" -o .\ledpin\ledpin.axf
